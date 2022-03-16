@@ -46,20 +46,6 @@ class Usertable(db.Model):
 
 @app.route("/", methods=["GET", "POST"])
 def Usertable_view():
-    l = {
-        "amount": 25654,
-        "charges": {
-            "data": [
-                {
-                    "name": "john"
-                }
-            ]
-        }
-    }
-    for i in range(1,2):
-        for j in range(1,11):
-            j=j+1
-            print (j) 
     # print(l["charges"]["data"][0]["name"])
 
     # name=request.form["nm"];
@@ -139,4 +125,4 @@ def update(sno):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
