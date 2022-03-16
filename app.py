@@ -14,6 +14,7 @@ app = Flask(__name__)
 # app.config["SQLALCHEMY_DATABASE_URI"]="sqlite:///test.db";
 app.config["SQLALCHEMY_DATABASE_URI"] = 'mysql://root:@localhost/testing'
 app.config[" SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+app.secret_key= "dharmeshmohanbhaipatel_1801"
 
 db = SQLAlchemy(app)
 # name="asa"
