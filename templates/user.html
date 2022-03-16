@@ -1,0 +1,37 @@
+{% extends 'main.html' %}
+{% block body %}
+    <div class="container mt-3">
+        <table class="table table-dark ">
+            <thead>
+                <tr>
+                    <th scope="col">sno</th>
+                    <th scope="col">name</th>
+                    <th scope="col">email</th>
+                    <th scope="col">password</th>
+                    <th scope="col">mobile</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+
+                {% for user in user  %}
+                <tr>
+                    <th scope="row">{{loop.index}}</th>
+                    <td>{{user.name}}</td>
+                    <td>{{user.email}}</td>
+                    <td>{{user.password}}</td>
+                    <td>{{user.mobile}}</td>
+                    <td><a href="/delete/{{user.sno}}"><button
+                                class="btn btn-sm btn-outline-danger">delete</button></a>
+                                <a href="/update/{{user.sno}}"><button
+                                class="ms-2 btn btn-sm btn-outline-warning">update</button></a></td>
+                </tr>
+
+                {% endfor %}
+
+            </tbody>
+        </table>
+    </div>
+
+
+    {% endblock body %}

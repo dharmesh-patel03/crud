@@ -1,0 +1,29 @@
+{% extends 'main.html' %}
+{% block body %}
+
+<h1 class="text-center">User Registration</h1>
+<div class="container w-50 ">
+    <form class="p-3" method="POST" action="/">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">name</label>
+            <input type="text" class="form-control bg-dark text-light" id="exampleInputEmail1" name="name" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control bg-dark text-light" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" name="password" class="form-control bg-dark text-light" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Mobile</label>
+            <input type="number" class="form-control bg-dark text-light" name="mobile" id="exampleInputEmail1"
+                aria-describedby="emailHelp">
+        </div>
+        <button type="submit" class="btn btn-dark">Submit</button>
+    </form>
+</div>
+
+
+{% endblock body %}
