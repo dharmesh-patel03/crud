@@ -1,6 +1,6 @@
 # from crypt import methods
 # from urllib import request
-from flask import request,Flask
+from flask import request,Flask,render_template,redirect
 from flask_sqlalchemy import *
 import datetime
 # from jsonify import json
