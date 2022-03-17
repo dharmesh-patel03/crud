@@ -13,7 +13,7 @@ import hashlib
 app = Flask(__name__)
 # app.config["SQLALCHEMY_DATABASE_URI"]="sqlite:///test.db";
 # app.config["SQLALCHEMY_DATABASE_URI"] = 'mysql://root:@localhost/testing'
-app.config["SQLALCHEMY_DATABASE_URI"] = 'postgres://btgenrxmkacrcl:87d95f26a64a1a8040d72fc7f225effeb8d7d0a5f344c2db26bfe5c6f1df5bc5@ec2-3-219-63-251.compute-1.amazonaws.com:5432/da7d8gda18qasj'
+app.config["SQLALCHEMY_DATABASE_URI"] = 'postgresql://btgenrxmkacrcl:87d95f26a64a1a8040d72fc7f225effeb8d7d0a5f344c2db26bfe5c6f1df5bc5@ec2-3-219-63-251.compute-1.amazonaws.com:5432/da7d8gda18qasj'
 app.config[" SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.secret_key= "dharmeshmohanbhaipatel_1801"
 
